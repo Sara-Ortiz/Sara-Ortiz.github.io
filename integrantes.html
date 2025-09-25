@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes</title>
+    <link rel="stylesheet" href="css/integrantes.css">
+
+        <script src="js/integrantes.js" defer></script>
+
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Blog Comunicaciones</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="evidencias.html">Evidencias</a></li>
+                    <li><a href="contacto.html" class="btn-action">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+    <section class="integrantes-section">
+        <div class="container">
+            <h1>Integrantes</h1>
+            <div class="integrante">
+                <h2 onclick="toggleInfo('Samuel')">Samuel Palacio Mazo</h2>
+                <div id="Samuel" class="integrante-info">
+                    <h3>Reflexión del reto</h3>
+                    <p>Estudiante de comunicación, apasionada por el periodismo y la investigación social.</p>
+                </div>
+            </div>
+            <div class="integrante">
+                <h2 onclick="toggleInfo('Daniel')">Daniel Hernandez Palacio</h2>
+                <div id="Daniel" class="integrante-info">
+                    <h3>Reflexión del reto</h3>
+                    <p>Especialista en comunicación digital, enfocado en redes sociales y marketing.</p>
+                </div>
+            </div>
+            <div class="integrante">
+                <h2 onclick="toggleInfo('Sara')">Sara Ortiz Higuita</h2>
+                <div id="Sara" class="integrante-info">
+                    <h3>Reflexión del reto</h3>
+                    <p>Creativa y diseñadora gráfica, interesada en la comunicación visual y multimedia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Blog Comunicaciones. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDescripcion(id) {
+            var descripcion = document.getElementById(id);
+            if (descripcion.style.display === "none" || descripcion.style.display === "") {
+                descripcion.style.display = "block";
+            } else {
+                descripcion.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

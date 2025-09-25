@@ -1,0 +1,84 @@
+@import url('estilos.css');
+
+/* ---------------------------------- */
+/* Contenido Principal (Main)         */
+/* ---------------------------------- */
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+}
+
+/* ---------------------------------- */
+/* Sección Integrantes                */
+/* ---------------------------------- */
+.integrante {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.integrante:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.integrante h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--button-bg);
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.integrante h2:hover {
+    color: var(--button-bg);
+    text-decoration-color: var(--primary-text);
+}
+
+.integrante-info {
+    display: none;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.integrante-info h3 {
+    font-size: 1.1rem;
+    color: var(--primary-text);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.integrante-info p {
+    font-size: 1rem;
+    color: var(--secondary-text);
+    margin: 0;
+}
+
+/* ---------------------------------- */
+/* Adaptabilidad Móvil (Responsive)   */
+/* ---------------------------------- */
+@media (max-width: 600px) {
+    .integrante h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,72 @@
+@import url('estilos.css');
+
+/* ---------------------------------- */
+/* Contenido Principal (Main)         */
+/* ---------------------------------- */
+.content-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.content-section h1 {
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+}
+
+/* ---------------------------------- */
+/* Sección de Evidencias              */
+/* ---------------------------------- */
+.evidencia {
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.btn-evidencia {
+    display: block;
+    width: 100%;
+    background-color: var(--button-bg);
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.btn-evidencia:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.info-evidencia {
+    padding: 20px 25px;
+    text-align: left;
+    background-color: #fff;
+    border-top: 1px solid var(--border-color);
+}
+
+.info-evidencia p {
+    font-size: 1rem;
+    color: var(--secondary-text);
+    margin: 0;
+}
+
+.integrante-info {
+    display: none;
+}
+
+/* ---------------------------------- */
+/* Adaptabilidad Móvil (Responsive)   */
+/* ---------------------------------- */
+@media (max-width: 600px) {
+    .content-section h1 {
+        font-size: 2.5rem;
+    }
+    .btn-evidencia {
+        font-size: 1rem;
+    }
+}

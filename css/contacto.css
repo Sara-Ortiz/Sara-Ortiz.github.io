@@ -1,0 +1,87 @@
+@import url('estilos.css');
+
+/* ---------------------------------- */
+/* Contenido Principal (Main)         */
+/* ---------------------------------- */
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+}
+
+/* ---------------------------------- */
+/* Sección de Contacto (Form)         */
+/* ---------------------------------- */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-text);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-text);
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--button-bg);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-2px);
+}
+
+/* ---------------------------------- */
+/* Adaptabilidad Móvil (Responsive)   */
+/* ---------------------------------- */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 20px;
+    }
+}
